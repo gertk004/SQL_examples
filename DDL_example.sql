@@ -4,13 +4,6 @@
 
 CREATE DATABASE banking;
 
---------------------------------------------------------------------------------
-/*				             Connect to Database        		  	          */
---------------------------------------------------------------------------------
-
--- **DO NOT DELETE OR ALTER THE CODE BELOW!**
--- **THIS IS NEEDED FOR CODEGRADE TO RUN YOUR ASSIGNMENT**
-
 \connect banking;
 
 --------------------------------------------------------------------------------
@@ -51,3 +44,4 @@ CREATE TABLE depositor (
 	cust_ID varchar(40) REFERENCES customer ON UPDATE CASCADE ON DELETE CASCADE,
 	account_number varchar(40) REFERENCES account ON UPDATE CASCADE ON DELETE CASCADE
 );
+
