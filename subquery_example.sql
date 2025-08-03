@@ -1,9 +1,3 @@
-/*
-    Name: Chase Gertken
-    DTSC660: Data and Database Managment with SQL
-    Assignment 5- PART 1
-*/
-
 --------------------------------------------------------------------------------
 /*				                 Query 1            		  		          */
 --------------------------------------------------------------------------------
@@ -96,5 +90,6 @@ WHERE branch_name = 'Yonkahs Bankahs'
 	AND
 CAST(amount AS numeric) > 
 	(SELECT AVG(CAST(amount AS numeric)) FROM loan);
+
 
   
