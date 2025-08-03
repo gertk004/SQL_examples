@@ -1,9 +1,3 @@
-/*
-    Name: Chase Gertken
-    DTSC660: Data and Database Managment with SQL
-    Assignment 5- PART 2
-*/
-
 --------------------------------------------------------------------------------
 /*				                 Query 8            		  		          */
 --------------------------------------------------------------------------------
@@ -59,4 +53,5 @@ FROM student
 LEFT OUTER JOIN course USING (dept_name)
 GROUP BY id 
 HAVING COUNT(DISTINCT title) = 0;
+
 
